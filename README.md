@@ -5,7 +5,7 @@
 
 ---
 
-## 🚀 Project Concept (200-300 Word Summary)
+## 🚀 Project Concept
 
 **Concept: The Digital Pulse – Evolution of the Internet**
 *Digital Pulse* is an immersive, scroll-based narrative experience designed to take the user through the pivotal eras of human connectivity. Built using React, Framer Motion, and Tailwind CSS, the project moves beyond a traditional static website and acts as a time-traveling interface. It chronicles the journey from the first packets of the ARPANET to the highly interconnected, AI-driven future of the Web.
@@ -59,7 +59,7 @@ By leveraging the power of **Framer Motion**, we've implemented parallax effects
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/digital-odyssey-hackathon.git
+   git clone [https://github.com/Sashank206/Digital-pluse] 
    ```
 
 2. **Install dependencies:**
