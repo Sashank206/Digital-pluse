@@ -39,6 +39,32 @@ const Hero = () => {
       <div className="absolute top-[20%] left-[10%] w-96 h-96 bg-orange-600/10 rounded-full blur-[120px] glow-bg" />
       <div className="absolute bottom-[20%] right-[10%] w-96 h-96 bg-purple-600/10 rounded-full blur-[120px] glow-bg" />
       
+      {/* Antigravity Hack: Floating particles to make the screen feel like gravity is broken */}
+      <div className="absolute inset-0 pointer-events-none z-0">
+        {[...Array(20)].map((_, i) => (
+          <motion.div 
+            key={i}
+            initial={{ 
+              x: Math.random() * 100 + "%", 
+              y: Math.random() * 100 + "%", 
+              opacity: 0 
+            }}
+            animate={{ 
+              y: [null, "-=100", "+=50"],
+              opacity: [0, 0.4, 0],
+              scale: [0, 1.2, 0.8]
+            }}
+            transition={{ 
+              duration: 5 + Math.random() * 10, 
+              repeat: Infinity, 
+              ease: "easeInOut",
+              delay: Math.random() * 5
+            }}
+            className="absolute w-1 h-1 bg-orange-500 rounded-full blur-[1px]"
+          />
+        ))}
+      </div>
+
       {/* The main content area: Title and Intro text */}
       <div className="relative z-10 text-center">
         <motion.div
